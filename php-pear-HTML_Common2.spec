@@ -5,12 +5,12 @@
 
 Summary:	%{_pearname} - abstract base class for HTML classes (PHP5 port of HTML_Common package)
 Name:		php-pear-%{_pearname}
-Version:	0.3.0
-Release:	%mkrel 1
+Version:	2.0.0
+Release:	%mkrel 0.beta1.1
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
 URL:		http://pear.php.net/package/HTML_Common2/
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}beta1.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -49,7 +49,7 @@ rm -rf %{buildroot}
 
 install -d %{buildroot}%{_datadir}/pear/%{_class}
 
-install %{_pearname}-%{version}/*.php %{buildroot}%{_datadir}/pear/%{_class}
+install %{_pearname}-%{version}beta1/*.php %{buildroot}%{_datadir}/pear/%{_class}
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m0644 package.xml %{buildroot}%{_datadir}/pear/packages/%{_pearname}.xml
@@ -78,8 +78,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/tests
+%doc %{_pearname}-%{version}beta1/tests
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
