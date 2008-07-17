@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - abstract base class for HTML classes (PHP5 port of HTML_Common package)
 Name:		php-pear-%{_pearname}
 Version:	2.0.0
-Release:	%mkrel 0.beta1.1
+Release:	%mkrel 0.beta1.2
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Common2/
@@ -16,7 +16,7 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The HTML_Common2 package provides methods for HTML code display and
