@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.0.0
-Release:	%mkrel 0.beta1.5
+Release:	%mkrel 0.beta1.6
 Summary:	Abstract base class for HTML classes (PHP5 port of HTML_Common package)
 License:	PHP License
 Group:		Development/PHP
