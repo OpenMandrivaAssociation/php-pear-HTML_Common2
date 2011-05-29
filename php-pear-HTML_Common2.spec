@@ -1,11 +1,11 @@
 %define		_class		HTML
 %define		_subclass	Common2
 %define		upstream_name	%{_class}_%{_subclass}
-%define     pre         beta1
+%define     pre         %{nil}
 
 Name:		php-pear-%{upstream_name}
 Version:	2.0.0
-Release:	%mkrel 0.beta1.7
+Release:	%mkrel 1
 Summary:	Abstract base class for HTML classes (PHP5 port of HTML_Common package)
 License:	PHP License
 Group:		Development/PHP
